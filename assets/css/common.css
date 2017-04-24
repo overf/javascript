@@ -1,0 +1,43 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import "https://fonts.googleapis.com/css?family=Baloo+Tamma|Source+Sans+Pro:300,300i,400,400i,700,700i|Source+Code+Pro|Lora:400,400i,700,700i|Montserrat|Open+Sans:300,400";
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var, b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup, menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{table-layout:fixed;border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0 none;vertical-align:middle}
+hr{display:none}
+input,select,textarea,button,label{vertical-align:middle;font-family:inherit}
+input,select,textarea{border:1px #bdbdbd solid}
+input[type=radio],input[type=checkbox]{width:13px;height:13px;margin:0;padding:0;border:none;vertical-align:middle}
+textarea{resize:none;}
+button{border:0 none;background-color:transparent;cursor:pointer}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+legend, caption{text-indent:-9999px;top:-9999px;left:-9999px;height:0}
+a,a:hover,a:active,a:visited{text-decoration:none;color:#000;}
+
+
+html,body{width:100%}
+body,
+button,
+input,
+p,
+textarea {
+    font-family: "Lora", "LexiSaebom", "Times New Roman", serif;
+}
+h1, h2, h3, h4, h5 , dt {
+    font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
+}
+
+#wrap{max-width:1400px; padding:2%; border:1px solid #000; margin:0 auto; background-color:#fff; border-radius: 3px 3px 0 0; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);}
+
+.titleBox{width:100%; border-bottom:3px solid #000; margin-bottom:30px;}
+.titleBox h1{font-size:4vw;font-weight:700;}
+
+.descriptBox dl{border:1px solid #111; margin-bottom:10px;padding:15px;}
+.descriptBox dt{font-size:3vw;font-weight:600;border-bottom:1px solid #111; margin-bottom:10px;padding:15px;}
+
+code{font-size:16px;}
