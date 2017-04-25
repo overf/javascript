@@ -3,11 +3,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import "https://fonts.googleapis.com/css?family=Baloo+Tamma|Source+Sans+Pro:300,300i,400,400i,700,700i|Source+Code+Pro|Lora:400,400i,700,700i|Montserrat|Open+Sans:300,400";
 /* RESET */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var, b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup, menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var, b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup, menu,nav,output,ruby,section,summary,time,mark,audio,video,pre{margin:0;padding:0;border:0;vertical-align:baseline}
 dl,ul,ol,menu,li{list-style:none}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-table{table-layout:fixed;border-collapse:collapse;border-spacing:0}
+table{table-layout:auto;border-collapse:collapse;border-spacing:0}
 fieldset,img{border:0 none;vertical-align:middle}
 hr{display:none}
 input,select,textarea,button,label{vertical-align:middle;font-family:inherit}
@@ -20,7 +20,7 @@ legend, caption{text-indent:-9999px;top:-9999px;left:-9999px;height:0}
 a,a:hover,a:active,a:visited{text-decoration:none;color:#000;}
 
 
-html,body{width:100%;height:100%;}
+body{width:100%;height:100%;background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); opacity: 0.95;}
 body,
 button,
 input,
@@ -32,17 +32,25 @@ textarea {
 h1, h2, h3, h4, h5 , dt {
     font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
 }
+h3{font-size:25px;}
+h4{font-size:25px;}
+table{border:1px solid #000;width:100%;}
+tr{border-top:1px solid #000}
+td,th{border-left:1px solid #000;border-top:1px solid #000;text-align:center;padding:10px;}
+td:first-child,th:first-child,tr:first-child{border-left:none}
+#wrap{width:100%;height:100%;padding-bottom:50px;}
+.mainTitleBox{max-width:1400px;padding:30px 10px 0 10px; margin:0 auto 20px auto}
+.mainTitleBox h1{ font-size:50px; color:#fff;}
 
-#wrap{width:100%;height:100%;background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); opacity: 0.95;}
-.mainTitleBox{max-width:1400px;padding:30px 10px; margin:0 auto 20px auto}
-.mainTitleBox h1{ font-size:50px;}
+.contentBox{max-width:1400px; padding:30px 10px; border:1px solid #000; margin:0 auto; background-color:#fff; border-radius: 3px 3px 0 0; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);}
 
-.contentBox{max-width:1400px; padding:10px; border:1px solid #000; margin:0 auto; background-color:#fff; border-radius: 3px 3px 0 0; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);}
-
-.titleBox{width:100%; border-bottom:3px solid #000; margin-bottom:30px;}
+.titleBox{width:100%; border-bottom:3px solid #000; margin-bottom:30px;padding-top:20px}
 .titleBox h2{color:#23241f;font-size:35px;font-weight:700;}
 
+.descriptBox{margin-bottom:50px;}
 .descriptBox dl{border:1px solid #111; margin-bottom:10px;padding:15px;color:#23241f}
 .descriptBox dt{font-size:28px;font-weight:600;border-bottom:1px solid #111; margin-bottom:10px;padding:15px;}
+.descriptBox dd{padding:15px;}
 
+.areaBox{border:1px solid #111;padding:10px;}
 code{font-size:16px;}
