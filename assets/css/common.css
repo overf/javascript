@@ -26,15 +26,15 @@ button,
 input,
 p,
 textarea {
-    font-family: "Lora", "LexiSaebom", "Times New Roman", serif;
+    font-family: "Lora", "Noto Sans KR", serif;
     color:#23241f;
 }
 h1, h2, h3, h4, h5 , dt {
     font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
 }
-h3{font-size:25px;}
-h4{font-size:25px;}
-table{border:1px solid #000;width:100%;}
+h3{font-size:23px;font-weight:500;}
+h4{font-size:20px;}
+table{border:1px solid #000;width:100%; margin-bottom:15px;}
 tr{border-top:1px solid #000}
 td,th{border-left:1px solid #000;border-top:1px solid #000;text-align:center;padding:10px;}
 td:first-child,th:first-child,tr:first-child{border-left:none}
@@ -51,6 +51,8 @@ td:first-child,th:first-child,tr:first-child{border-left:none}
 .descriptBox dl{border:1px solid #111; margin-bottom:10px;padding:15px;color:#23241f}
 .descriptBox dt{font-size:28px;font-weight:600;border-bottom:1px solid #111; margin-bottom:10px;padding:15px;}
 .descriptBox dd{padding:15px;}
-
+.descriptText{font-size:15px;}
 .areaBox{border:1px solid #111;padding:10px;}
+.testBox{border:1px solid #111;padding:30px;}
+.testBox .testArea{min-height:50px;border:1px solid #111;padding:5px;}
 code{font-size:16px;}
