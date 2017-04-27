@@ -89,11 +89,45 @@ console.log(globalVar); // "지역변수"  출력
 
 
 
+/* 함수선언식 함수의 구조 */
+function functionName() {
+
+}
+functionName();//함수호출
+
+/* 함수의 작업 실행을 위해 추가적인 정보가 필요할 경우, 매개변수를 지정한다. 매개변수는 함수 내에서 변수와 동일하게 동작한다.
+*  매개변수(parameter)는 인수(argument)로 초기화된다.
+*  @ 매개변수의 갯수보다 인수를 적게 전달했을 때(multiply(), multiply(1)) 인수가 전달되지 않은 매개변수는 undefined으로 초기화된다.
+*  @매개변수의 갯수보다 인수를 더 많이 전달한 경우, 초과된 인수는 무시된다.
+* */
+function functionName(매개변수) {
+
+}
+functionName(인수,인수);//매개변수가 있을경우 콤마로 구분
+
+/* 반환값 (return value) : 함수는 자신을 호출한 코드에게 수행한 결과를 반환(return)할 수 있다. */
+function functionName() {
+    return 리턴값;
+}
+
+
+
+function parameterTest(num){
+    console.log(num); // 3 출력
+}
+parameterTest(3);
+
+function returnTest(num){
+    var testNum = num * 3;
+    return testNum
+}
+console.log(returnTest(3)); // 리턴값 9 반환
+
+/* 함수호출 방법 */
 
 
 
 
-
-
+/*  */
 
 
