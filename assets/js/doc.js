@@ -54,3 +54,46 @@ console.log(arrayType); // "1",2,3,4,"5"
 document.getElementById('id');
 document.getElementsByTagName('name');
 document.getElementsByClassName('name');
+
+
+
+
+
+
+
+
+
+/*글로벌 영역에 변수를 선언하면 이 변수는 어느 곳에서든지 참조할 수 있는 global scope를 갖는 전역 변수가 된다.*/
+
+var globalVar = "전역변수"; //전역변수 선언 (스크립트내 제한없이 호출가능)
+
+/*로컬 영역에 변수를 선언하면 이 변수는 해당함수 내부에서만 사용할수있는 local scope를 갖는 지역 변수가 된다.*/
+function localVarTestFunctino(){
+    var localVar = "지역변수"; //지역변수 선언 (함수 내부에서만 사용가능)
+}
+
+console.log(globalVar); // "전역변수" 출력
+console.log(localVar); // Uncaught ReferenceError: test is not defined 에러메세지 출력
+
+
+/*변수의 참조 : 로컬영역에 선언한 변수는 전역변수에 참조하여 활용할수있다*/
+
+var globalVar = "전역변수";
+
+function localVarTestFunctino(){
+    var localVar = "지역변수";
+    globalVar = localVar;//글로벌영역 변수에 로컬변수를 참조
+}
+
+console.log(globalVar); // "지역변수"  출력
+
+
+
+
+
+
+
+
+
+
+
