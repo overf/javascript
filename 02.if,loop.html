@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Basic</title>
+    <link rel="stylesheet" href="assets/css/styles/monokai-sublime.css">
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="assets/css/common.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="mainTitleBox">
+        <h1>Javascript Basic</h1>
+    </div>
+    <div class="contentBox">
+        <div class="titleBox">
+            <h2>조건문,반복문</h2>
+        </div>
+        <div class="descriptBox">
+            <dl>
+                <dt>조건문(Conditional statement)</dt>
+                <dd>
+                    조건문은 주어진 조건식(conditional expression)이 참(true)인지 거짓(false)인지에 따라 실행되어질 구문들의 집합이다.<br>
+                    JavaScript는 2가지의 조건문 if...else 와 switch를 제공한다.
+                </dd>
+            </dl>
+            <dl>
+                <dt>반복문(Loop)</dt>
+                <dd>
+                    반복문은 주어진 조건식(conditional expression)이 참인 경우 코드 블록을 실행한다.<br>
+                    그 후 조건식을 다시 검사하여 여전히 참인 경우 코드 블록을 다시 실행하며 이는 조건식이 거짓일 때까지 반복된다.<br>
+                    JavaScript는 3가지의 반복문 for, while, do while을 제공한다.<br>
+                </dd>
+            </dl>
+        </div>
+        <div class="areaBox">
+            <div class="examBox">
+                <h3>1. if</h3>
+                <p class="descriptText">
+                    if 문은 주어진 조건식을 평가하여 논리적 참, 거짓을 구별하는 구문이다.<br>
+                    조건문의 평가 결과가 참(true)일 경우, if 문 직후에 존재하는 코드 블럭이 실행된다.<br>
+                    거짓(false)일 경우, else 구문 직후에 존재하는 코드 블럭이 실행된다. (else if와 else 구문은 option이다.)
+                </p>
+                <pre>
+                    <code>
+if (조건식) {
+  // 조건식이 참이면 이 코드블록이 실행된다.
+} else {
+  // 조건식이 거짓이면 이 코드블록이 실행된다.
+}
+
+var hour = 20;
+var greeting;
+
+// if 문
+if (hour < 18) {
+  greeting = "Good day";
+}
+
+console.log(greeting);
+
+// else 문
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+console.log(greeting);
+
+// else if 문
+if (hour < 10) {
+  greeting = "Good morning";
+} else if (hour < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+console.log(greeting);
+                    </code>
+                </pre>
+            </div>
+            <div class="examBox">
+                <h3>2. switch</h3>
+                <p class="descriptText">
+                    switch 문의 경우, switch변수의 값과 일치되는 case문으로 실행 순서가 이동하게 된다.<br>
+                    switch변수의 값과 일치되는 case문이 없다면 실행 순서는 default로 이동한다.<br>
+                    break keyword는 switch 구문에서 탈출하는 역할을 수행한다. break가 없다면 실행 순서는 다음 case문으로 이동한다.<br>
+                    default문의 break는 생략하여도 무방하다. 이유는 default문이 가장 마지막에 위치하므로 다음 구문으로 이동할 수 없기 때문이다.
+                </p>
+                <pre>
+                    <code>
+var color = "red";
+
+switch(color) {
+  case "yellow":
+    console.log("yellow color");
+    break;
+  case "red":
+    console.log("red color");
+    break;
+  case "blue":
+    console.log("blue color");
+    break;
+  default:
+    console.log("no known color specified");
+}
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
