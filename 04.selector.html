@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Basic</title>
+    <link rel="stylesheet" href="assets/css/styles/monokai-sublime.css">
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="assets/css/common.css">
+</head>
+    <body>
+        <div id="wrap">
+            <div class="mainTitleBox">
+                <h1>Javascript Basic</h1>
+            </div>
+            <div class="contentBox">
+                <div class="titleBox">
+                    <h2>Selector , event , element , style</h2>
+                </div>
+                <div class="descriptBox">
+                    <dl>
+                        <dt>Selector</dt>
+                        <dd>
+                            연Javascript에서 DOM을  통해 HTML 문서의 속성들을 불러오는것을 조금 더 쉽게 제어할 수 있고, 그 범위가 넓어서 다양한 선택자가 존재한다.
+                        </dd>
+                    </dl>
+                </div>
+                <div class="areaBox">
+                    <div class="examBox">
+                        <h3>javascript selector</h3>
+                        <div class="tableBox">
+                            <table>
+                                <colgroup>
+                                    <col width="33.33%">
+                                    <col width="33.33%">
+                                    <col width="33.33%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>getElementsBy*</th>
+                                        <th>querySelector*</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id</td>
+                                        <td>document.getElementById(‘foo’)</td>
+                                        <td>document.querySelector(‘#foo’)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tag</td>
+                                        <td>document.getElementsByTagName(‘li’)</td>
+                                        <td>document.querySelectorAll(‘li’)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>document.getElementsByClassName(‘bar’)</td>
+                                        <td>document.querySelectorAll(‘.bar’)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>속성(name=foo)</td>
+                                        <td>document.getElementsByName(‘foo’)</td>
+                                        <td>document.querySelectorAll(‘[name=foo])</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <pre>
+                            <code>
+//요소의 id 속성값으로 선택
+var elem = document.getElementById('one');
+
+                            </code>
+                        </pre>
+                        <a href="https://www.w3schools.com/jsref/dom_obj_all.asp">https://www.w3schools.com/jsref/dom_obj_all.asp</a>
+                        <a href="https://www.w3schools.com/jsref/dom_obj_style.asp">https://www.w3schools.com/jsref/dom_obj_style.asp</a>
+                        <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">https://www.w3schools.com/jsref/dom_obj_event.asp</a>
+                        <a href="https://www.w3schools.com/jsref/obj_window.asp">https://www.w3schools.com/jsref/obj_window.asp</a>
+                        <a href="http://poiemaweb.com/js-dom">http://poiemaweb.com/js-dom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
