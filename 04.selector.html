@@ -107,11 +107,11 @@ for (var i=0; i < elems.length; i++){
 //elems[인덱스값] 선택된 요소를 인덱스값으로 검색하여 사용가능
                             </code>
                         </pre>
-                        <a href="https://www.w3schools.com/jsref/dom_obj_all.asp">dom obj</a>
-                        <a href="https://www.w3schools.com/jsref/dom_obj_style.asp">style</a>
-                        <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">event</a>
-                        <a href="https://www.w3schools.com/jsref/obj_window.asp">window</a>
-                        <a href="http://poiemaweb.com/js-dom">http://poiemaweb.com/js-dom</a>
+                        <a target="_blank" href="https://www.w3schools.com/jsref/dom_obj_all.asp">dom obj</a>
+                        <a target="_blank" href="https://www.w3schools.com/jsref/dom_obj_style.asp">style</a>
+                        <a target="_blank" href="https://www.w3schools.com/jsref/dom_obj_event.asp">event</a>
+                        <a target="_blank" href="https://www.w3schools.com/jsref/obj_window.asp">window</a>
+                        <a target="_blank" href="http://poiemaweb.com/js-dom">http://poiemaweb.com/js-dom</a>
                     </div>
                 </div>
                 <div class="areaBox">
@@ -120,19 +120,53 @@ for (var i=0; i < elems.length; i++){
                         <p class="descriptText">
                             브라우저는 이벤트를 감지할 수 있으며 이벤트 발생 시에는 통지해 준다. 이 과정을 통해 사용자와 웹페이지는 상호작용(Interaction)이 가능하게 된다.
                         </p>
-                        <a class="link" href="https://www.w3schools.com/jsref/dom_obj_style.asp">style 참고 링크</a>
+                        <div class="tableBox">
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="80%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th colspan="2">이벤트 등록방법</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>In HTML:</th>
+                                    <td>&lt;element onclick="myScript"&gt;</td>
+                                </tr>
+                                <tr>
+                                    <th>In JavaScript:</th>
+                                    <td>object.onclick = function(){myScript};</td>
+                                </tr>
+                                <tr>
+                                    <th>addEventListener() method:</th>
+                                    <td>object.addEventListener("click", myScript); (ie9 이상지원)</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a class="link" target="_blank" href="https://www.w3schools.com/jsref/dom_obj_event.asp">event 참고 링크</a>
                         <pre>
                             <code>
-//객체 선택후 style 적용
-
-//배경색 변경
-var elem = document.getElementById('colorDiv');
-elem.style.backgroundColor = "red";
+//HTML 방식
+"&lt;button onclick="myFunction()"&gt;Click me&lt;/button&gt"
 
 
-//left 값 변경
-var elem = document.getElementById('colorDiv');
-elem.style.left = "100px";
+//JavaScript
+document.getElementById("demo").onclick = function() {myFunction()};
+function myFunction() {
+    console.log('click');
+}
+
+
+//addEventListener 방식
+document.getElementById("demo").addEventListener("click", myFunction);
+function myFunction() {
+    console.log('click');
+}
+
                             </code>
                         </pre>
                     </div>
@@ -144,7 +178,7 @@ elem.style.left = "100px";
                             자바스크립트를 사용해서 CSS를 조작하고 요소에 사용된 스타일을 동적으로 변경할수있다.<br>
                             css 변경시 지원브라우저 확인필요
                         </p>
-                        <a class="link" href="https://www.w3schools.com/jsref/dom_obj_style.asp">style 참고 링크</a>
+                        <a class="link" target="_blank" href="https://www.w3schools.com/jsref/dom_obj_style.asp">style 참고 링크</a>
                         <pre>
                             <code>
 //객체 선택후 style 적용
